@@ -3,7 +3,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,6 +35,11 @@ public class login {
 			
 			// click on login button
 			loginButton.click();
+			
+		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+			WebElement profileViewDropdownButton = driver.findElement(By.cssSelector(".profile-view-btn > #basic-nav-dropdown"));
+			Assertions.assertEquals(true, profileViewDropdownButton.isDisplayed());
+
 			
 			// close the window
 			driver.quit();
