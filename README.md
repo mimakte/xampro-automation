@@ -19,21 +19,8 @@ Before you start, ensure you have the following installed:
 - **Apache Maven** (version 3.6.3 or higher)
 - WebDriver binaries for the browsers (ChromeDriver, GeckoDriver, etc.)
 - An IDE like **Eclipse**
-
-## Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/mimakte/xampro-automation.git
-cd xampro-automation
-```
-
-### 2. Install dependencies
-```bash
-mvn clean install
-```
-
-### 3. Project Structure
+  
+### Project Structure
 ```bash
 xampro-automation/
 ├── src/
@@ -48,3 +35,17 @@ xampro-automation/
 ├── pom.xml
 └── README.md
 ```
+## Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/mimakte/xampro-automation.git
+cd xampro-automation
+```
+
+### 2. Open the folder in Eclipse IDE
+
+### 3. In Eclipse, Right Click on the Project -> Maven -> Update Project. It will install the dependecies mentioned in pom.xml file
+
+### 4. Run a particular test file
+ 
