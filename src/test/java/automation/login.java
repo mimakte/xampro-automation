@@ -1,4 +1,4 @@
-package jsonFiles;
+package automation;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
@@ -13,7 +13,7 @@ public class login {
 	 public static void main(String[] args) throws IOException {
 		 	// read the file
 	        ObjectMapper objectMapper = new ObjectMapper();
-	        JsonNode jsonNode = objectMapper.readTree(new File("C:\\Users\\HP\\eclipse-workspace\\SeleniumMaven\\src\\test\\java\\jsonFiles\\users.json"));
+	        JsonNode jsonNode = objectMapper.readTree(new File("C:\\Users\\HP\\eclipse-workspace\\SeleniumMaven\\src\\test\\java\\automation\\users.json"));
 	        String email = jsonNode.get("email").asText();
 	        String  password = jsonNode.get("password").asText();
 	        
@@ -33,5 +33,8 @@ public class login {
 			
 			// click on login button
 			loginButton.click();
+			
+			// close the window
+			driver.quit();
 	    }
 }
