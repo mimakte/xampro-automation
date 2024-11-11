@@ -18,7 +18,7 @@ Before you start, ensure you have the following installed:
 - **Java JDK** (version 8 or higher)
 - **Apache Maven** (version 3.6.3 or higher)
 - WebDriver binaries for the browsers (ChromeDriver, GeckoDriver, etc.)
-- An IDE like **IntelliJ IDEA** or **Eclipse**
+- An IDE like **Eclipse**
 
 ## Getting Started
 
