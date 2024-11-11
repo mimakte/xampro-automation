@@ -36,11 +36,11 @@ public class login {
 			// click on login button
 			loginButton.click();
 			
+			// check the visibility of profile drop-down
 		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 			WebElement profileViewDropdownButton = driver.findElement(By.cssSelector(".profile-view-btn > #basic-nav-dropdown"));
 			Assertions.assertEquals(true, profileViewDropdownButton.isDisplayed());
 
-			
 			// close the window
 			driver.quit();
 	    }
